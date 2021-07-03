@@ -1,0 +1,139 @@
+:root {
+    --min-height: 500px;
+    --min-width: 130px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+    background-color: #016B78;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    height: 464px;
+    width: 300px;
+    box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display {
+    background-color: #AFAFAF;
+    height: 85px;
+    width: 260px;
+    margin-top: 25px;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.25);
+    display: grid;
+    grid-template-areas: "last-operation"
+                         "result";
+    align-content: space-between;
+    overflow: hidden;
+}
+
+.buttons {
+    border: 0px;
+    width: 255px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin-top: 27px;
+    margin-bottom: 27px;
+}
+
+button {
+    border: 0px;
+    font-size: 18px;
+}
+
+.btn {
+    align-self: center;
+    justify-self: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: #616161;
+    color: #FFFFFF;
+}
+
+.cldel {
+    background-color: #f77882;
+}
+
+.equal {
+    background-color: #2f9c47;
+}
+
+.digit {
+    color: black;
+    background-color: #4780a5;
+}
+
+.operation {
+    background-color: #eec276;
+    color: black;
+}
+
+.cldel:hover {
+    transform: scale(1.1);
+    background-color: #F45B69;
+    cursor: pointer;
+}
+
+.digit:hover {
+    transform: scale(1.1);
+    background-color: #48ACF0;
+    cursor: pointer;
+}
+
+.equal:hover {
+    transform: scale(1.1);
+    background-color: #009e22;
+    cursor: pointer;
+}
+
+.operation:hover {
+    transform: scale(1.1);
+    background-color: #f0b858;
+    cursor: pointer;
+}
+
+.main-disp {
+    grid-area: "result";
+    justify-self: end;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+.secondary-disp {
+    grid-area: "result";
+    justify-self: end;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 24px;
+    color: #646464;
+}
+
+footer {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: white;
+}
