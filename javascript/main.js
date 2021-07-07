@@ -120,6 +120,13 @@ function changeSign() {
     currentDispValue = calculator.chsi(parseFloat(currentDispValue));
     currentDispValue = currentDispValue.toString();
 
+    if (operator) {
+        operandTwo = currentDispValue;
+    }
+    else {
+        operandOne = currentDispValue;
+    }
+
     populateDisplay(currentDispValue);
 }
 
